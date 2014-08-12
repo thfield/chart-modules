@@ -6,5 +6,6 @@ http://bl.ocks.org/NPashaP/96447623ef4d342ee09b
 pie library
 http://d3pie.org/
 
-
-http://pothibo.com/2013/09/d3-js-how-to-handle-dynamic-json-data/
+tutorials:
+	http://pothibo.com/2013/09/d3-js-how-to-handle-dynamic-json-data/
+	https://www.dashingd3js.com/using-json-to-simplify-code
