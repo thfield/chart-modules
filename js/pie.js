@@ -1,11 +1,12 @@
 /* --- pie/donut chart --- */
 var pageTarget = '#pie_target' ;
-  // set chart pisition on pagee
+  // set chart position on page
 
-var width = 960,
-    height = 500,
-    radius = Math.min(width, height) / 2;
-  // set size
+var width = 400,
+    height = 400,
+    radius = Math.min(width, height) / 2,
+    thickness = 50;
+  // set sizes
 
 var color = d3.scale.ordinal()
     .range(["#98abc5", "#8a89a6", "#7b6888", "#6b486b", "#a05d56", "#d0743c", "#ff8c00"]);
@@ -45,7 +46,7 @@ var JSONdata = [
 
 var arc = d3.svg.arc()
     .outerRadius(radius - 10)
-    .innerRadius(radius - 70);
+    .innerRadius(radius - thickness);
 
 var pie = d3.layout.pie()
     .sort(null)
@@ -63,10 +64,10 @@ data.forEach(function(d) {
   d.value = +d.value;
 });
 
-var g = svg.selectAll(".arc")
+var g = svg.selectAll(".pie_slice")
     .data(pie(data))
   .enter().append("g")
-    .attr("class", "arc");
+    .attr("class", "pie_slice");
 
 g.append("path")
     .attr("d", arc)
@@ -75,6 +76,7 @@ g.append("path")
 g.append("text")
     .attr("transform", function(d) { return "translate(" + arc.centroid(d) + ")"; })
     .attr("dy", ".35em")
+    .attr("class", "pie_slice_label")
     .style("text-anchor", "middle")
     .text(function(d) { return d.data.name; });
     
