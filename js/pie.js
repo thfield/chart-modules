@@ -38,8 +38,6 @@ var svg = d3.select(pageTarget).append("svg")
   .append("g")
     .attr("transform", "translate(" + width / 2 + "," + height / 2 + ")");
 
-//var data = JSONdata.slice();
-
 d3.json(dataPath, function(error, json) {
   if (error) return console.warn(error);
   data = json;
@@ -65,3 +63,5 @@ d3.json(dataPath, function(error, json) {
       .text(function(d) { return d.data.label; });
 });    
 /* -- end pie/donut chart -- */
+
+// adapted from http://bl.ocks.org/mbostock/3887193
