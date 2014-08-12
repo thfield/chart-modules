@@ -1,0 +1,38 @@
+specs.txt
+
+number fact
+	data	
+		value
+		caption
+	css
+		value size
+		caption size
+
+bar chart
+	data
+		json object with data
+		size
+	css
+		colors
+
+horizontal bar chart
+	data
+		json object with data
+		size
+	css
+		colors
+
+pie chart
+	data
+		json object with data
+		size
+	css
+		colors
+		ring width
+
+timeline chart
+	data
+		json object with data
+		size
+	css
+		colors
