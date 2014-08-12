@@ -1,23 +1,32 @@
 /* --- pie/donut chart --- */
+
+
+/* --- begin user set variables --- */
 var pageTarget = '#pie_target' ;
   // set chart position on page
 
-var width = 400,
-    height = 400,
-    radius = Math.min(width, height) / 2,
-    thickness = 50;
+var width = 400, // of chart
+    height = 400, // of chart
+    diameter = 350, //of pie
+    thickness = 30; // set to "diameter/2" for normal pie
   // set sizes
 
-var color = d3.scale.ordinal()
-    .range(["#98abc5", "#8a89a6", "#7b6888", "#6b486b", "#a05d56", "#d0743c", "#ff8c00"]);
+var colorScale = ["#98abc5", "#8a89a6", "#7b6888", "#6b486b", "#a05d56", "#d0743c", "#ff8c00"];
   // set slice colors
 
 var dataPath = "data/pieData.json"
   // set path to data file
 
+/* --- end user set variables --- */
+
+
+
+var color = d3.scale.ordinal()
+    .range(colorScale);
+
 var arc = d3.svg.arc()
-    .outerRadius(radius - 10)
-    .innerRadius(radius - thickness);
+    .outerRadius(diameter/2)
+    .innerRadius(diameter/2 - thickness);
 
 var pie = d3.layout.pie()
     .sort(null)
