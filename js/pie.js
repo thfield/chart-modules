@@ -12,37 +12,8 @@ var color = d3.scale.ordinal()
     .range(["#98abc5", "#8a89a6", "#7b6888", "#6b486b", "#a05d56", "#d0743c", "#ff8c00"]);
   // set slice colors
 
-var JSONdata = [
-    {
-      "name":"<5",
-      "value":2704659
-    },
-    {
-      "name":"5-13",
-      "value":4499890
-    },
-    {
-      "name":"14-17",
-      "value":2159981
-    },
-    {
-      "name":"18-24",
-      "value":3853788
-    },
-    {
-      "name":"25-44",
-      "value":14106543
-    },
-    {
-      "name":"45-64",
-      "value":8819342
-    },
-    {
-      "name":"≥65",
-      "value":612463
-    }
-  ]; 
-  // set data
+var dataPath = "data/pieData.json"
+  // set path to data file
 
 var arc = d3.svg.arc()
     .outerRadius(radius - 10)
@@ -58,26 +29,30 @@ var svg = d3.select(pageTarget).append("svg")
   .append("g")
     .attr("transform", "translate(" + width / 2 + "," + height / 2 + ")");
 
-var data = JSONdata.slice();
+//var data = JSONdata.slice();
 
-data.forEach(function(d) {
-  d.value = +d.value;
-});
+d3.json(dataPath, function(error, json) {
+  if (error) return console.warn(error);
+  data = json;
 
-var g = svg.selectAll(".pie_slice")
-    .data(pie(data))
-  .enter().append("g")
-    .attr("class", "pie_slice");
+  data.forEach(function(d) {
+    d.value = +d.value;
+  });
 
-g.append("path")
-    .attr("d", arc)
-    .style("fill", function(d) { return color(d.data.name); });
+  var g = svg.selectAll(".pie_slice")
+      .data(pie(data))
+    .enter().append("g")
+      .attr("class", "pie_slice");
 
-g.append("text")
-    .attr("transform", function(d) { return "translate(" + arc.centroid(d) + ")"; })
-    .attr("dy", ".35em")
-    .attr("class", "pie_slice_label")
-    .style("text-anchor", "middle")
-    .text(function(d) { return d.data.name; });
-    
+  g.append("path")
+      .attr("d", arc)
+      .style("fill", function(d) { return color(d.data.label); });
+
+  g.append("text")
+      .attr("transform", function(d) { return "translate(" + arc.centroid(d) + ")"; })
+      .attr("dy", ".35em")
+      .attr("class", "pie_slice_label")
+      .style("text-anchor", "middle")
+      .text(function(d) { return d.data.label; });
+});    
 /* -- end pie/donut chart -- */
