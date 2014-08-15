@@ -335,8 +335,8 @@ data =  [
         .staggerLabels(true)
         //.staggerLabels(historicalBarChart[0].values.length > 8)
         .tooltips(true)
-        //.showValues(true)
-        
+        .showValues(true) // "values" are the number that appears at the top 
+        .valueFormat(d3.format(',f')) //format to display "values" check out github.com/mbostock/d3/wiki/Formatting for more info
         .transitionDuration(250)
         ;
 
