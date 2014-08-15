@@ -40,14 +40,19 @@ var svg = d3.select(pageTarget).append("svg")
 
 d3.json(dataPath, function(error, json) {
   if (error) return console.warn(error);
-  data = json;
+  //data = json;
+  
+  //
+  //console.log(data);
+  //
 
   data.forEach(function(d) {
     d.value = +d.value;
   });
 
   var g = svg.selectAll(".pie_slice")
-      .data(pie(data))
+      .data(pie(json))
+      //.data(pie(data))
     .enter().append("g")
       .attr("class", "pie_slice");
 
