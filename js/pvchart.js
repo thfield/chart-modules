@@ -319,28 +319,31 @@ data =  [
       
       "label": "Wyoming",
       "value": "13",
-    },
-    
-    {
-      "dummy": "dummy",
-      "dummy": "dummy",
-    }                 
+    }               
   ]
 }
 ]; /**/
+
+defaultChartConfig('#chart', {
+  color: ["#edf8fb","#ccece6","#99d8c9","#66c2a4","#2ca25f","#006d2c"],
+  staggerLabels: true,
+  tooltips: true,
+  showValues: true,
+  valueFormat: d3.format(',f')
+});
+
+
+function defaultChartConfig(containerId, chartOptions) {
   nv.addGraph(function() {  
     var chart = nv.models.discreteBarChart()
         .x(function(d) { return d.label })
         .y(function(d) { return d.value })
-        .staggerLabels(true)
-        //.staggerLabels(historicalBarChart[0].values.length > 8)
-        .tooltips(true)
-        .showValues(true) // "values" are the number that appears at the top 
-        .valueFormat(d3.format(',f')) //format to display "values" check out github.com/mbostock/d3/wiki/Formatting for more info
-        .transitionDuration(250)
         ;
 
-    d3.select('#chart svg')
+    chart.yAxis.tickFormat(d3.format(',f'));    
+    chart.options(chartOptions);    
+        
+    d3.select(containerId + ' svg')
         .datum(data)
         .call(chart);
 
@@ -348,3 +351,4 @@ data =  [
 
     return chart;
   });
+}
