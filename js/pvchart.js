@@ -1,4 +1,4 @@
-data =  [ 
+chartData =  [ 
   {
   "key": "Orgs in each State",
   "values" : [
@@ -324,7 +324,30 @@ data =  [
 }
 ]; /**/
 
-defaultChartConfig('#chart', {
+truncData =  [ 
+  {
+  "key": "Orgs in each State",
+  "values" : [
+    
+    {
+      "label": "Alabama",
+      "value": "13",
+    },
+    
+    {
+      "label": "Alaska",
+      "value": "14",
+    },
+    
+    {
+      "label": "Arizona",
+      "value": "16",
+    },               
+  ]
+  }
+];
+
+defaultChartConfig('#chart', truncData, {
   color: ["#edf8fb","#ccece6","#99d8c9","#66c2a4","#2ca25f","#006d2c"],
   staggerLabels: true,
   tooltips: true,
@@ -333,7 +356,7 @@ defaultChartConfig('#chart', {
 });
 
 
-function defaultChartConfig(containerId, chartOptions) {
+function defaultChartConfig(containerId, data, chartOptions) {
   nv.addGraph(function() {  
     var chart = nv.models.discreteBarChart()
         .x(function(d) { return d.label })
