@@ -347,7 +347,7 @@ truncData =  [
   }
 ];
 
-defaultChartConfig('#chart', truncData, {
+defaultChartConfig('#chart', chartData, {
   color: ["#edf8fb","#ccece6","#99d8c9","#66c2a4","#2ca25f","#006d2c"],
   staggerLabels: true,
   tooltips: true,
@@ -356,22 +356,27 @@ defaultChartConfig('#chart', truncData, {
 });
 
 
-function defaultChartConfig(containerId, data, chartOptions) {
-  nv.addGraph(function() {  
-    var chart = nv.models.discreteBarChart()
-        .x(function(d) { return d.label })
-        .y(function(d) { return d.value })
-        ;
+//function defaultChartConfig(containerId, chartOptions) {
+function defaultChartConfig(containerId, inlinedata, chartOptions) {
+  //d3.json("data/pv.json", function(data) {
+    nv.addGraph(function() {  
+      //var chart = nv.models.multiBarChart()
+      var chart = nv.models.discreteBarChart()
+          .x(function(d) { return d.label })
+          .y(function(d) { return d.value })
+          ;
 
-    chart.yAxis.tickFormat(d3.format(',f'));    
-    chart.options(chartOptions);    
-        
-    d3.select(containerId + ' svg')
-        .datum(data)
-        .call(chart);
+      chart.yAxis.tickFormat(d3.format(',f'));    
+      chart.options(chartOptions);    
+          
+      d3.select(containerId + ' svg')
+          .datum(inlinedata)
+          //.datum(data)
+          .call(chart);
 
-    nv.utils.windowResize(chart.update);
+      nv.utils.windowResize(chart.update);
 
-    return chart;
-  });
+      return chart;
+    });
+  //});
 }
