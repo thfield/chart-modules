@@ -1,5 +1,5 @@
 /* --- pie/donut chart --- */
-
+function piechart(){
 
 /* --- begin user set variables --- */
 var pageTarget = '#pie_target' ;
@@ -14,7 +14,7 @@ var width = 400, // of chart
 var colorScale = ["#98abc5", "#8a89a6", "#7b6888", "#6b486b", "#a05d56", "#d0743c", "#ff8c00"];
   // set slice colors
 
-var dataPath = "data/pieData.json"
+var dataPath = "data/dataPie.json"
   // set path to data file
 
 /* --- end user set variables --- */
@@ -62,6 +62,8 @@ d3.json(dataPath, function(error, json) {
       .style("text-anchor", "middle")
       .text(function(d) { return d.data.label; });
 });    
+};
 /* -- end pie/donut chart -- */
 
+piechart();
 // adapted from http://bl.ocks.org/mbostock/3887193

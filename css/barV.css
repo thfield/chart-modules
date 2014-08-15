@@ -1,0 +1,49 @@
+/*
+.bar {
+  fill: steelblue;
+}
+
+.bar:hover {
+  fill: brown;
+}
+
+.axis {
+  font: 10px sans-serif;
+}
+
+.axis path,
+.axis line {
+  fill: none;
+  stroke: #000;
+  shape-rendering: crispEdges;
+}
+
+.x.axis path {
+  display: none;
+}
+*/
+
+.chart {
+    background-color: #eee;
+}
+ 
+.chart rect {
+	stroke: white;
+    fill: steelblue;
+}
+ 
+.axis {
+    shape-rendering: crispEdges;
+}
+ 
+.x.axis line {
+    stroke: black;
+}
+ 
+.y.axis line {
+    stroke: black;
+}
+ 
+.axis text {
+    font-size: 12px;
+}

@@ -1,0 +1,325 @@
+{
+	"auto_complete":
+	{
+		"selected_items":
+		[
+			[
+				"bar",
+				"barV_target"
+			],
+			[
+				"padd",
+				"padding-bottom"
+			]
+		]
+	},
+	"buffers":
+	[
+		{
+			"file": "index.html",
+			"settings":
+			{
+				"buffer_size": 671,
+				"line_ending": "Unix"
+			}
+		}
+	],
+	"build_system": "",
+	"command_palette":
+	{
+		"height": 67.0,
+		"selected_items":
+		[
+			[
+				"Package Control: in",
+				"Package Control: Install Package"
+			],
+			[
+				"Package Control: ",
+				"Package Control: Remove Package"
+			],
+			[
+				"Package Control: insta",
+				"Package Control: Install Package"
+			]
+		],
+		"width": 449.0
+	},
+	"console":
+	{
+		"height": 125.0
+	},
+	"distraction_free":
+	{
+		"menu_visible": true,
+		"show_minimap": false,
+		"show_open_files": false,
+		"show_tabs": false,
+		"side_bar_visible": false,
+		"status_bar_visible": false
+	},
+	"file_history":
+	[
+		"/Users/tyler/www/chart_modules/js/bar_ex.js",
+		"/Users/tyler/www/chart_modules/data/dataPie.json",
+		"/Users/tyler/www/chart_modules/js/pie.js",
+		"/Users/tyler/www/chart_modules/data/data.tsv",
+		"/Users/tyler/www/chart_modules/data/pieData.json",
+		"/Users/tyler/www/chart_modules/css/pie.css",
+		"/Users/tyler/www/chart_modules/css/barV.css",
+		"/Users/tyler/www/chart_modules/css/stylesheet.css",
+		"/Users/tyler/www/chart_modules/data/data.csv",
+		"/Users/tyler/www/chart_modules/research.txt",
+		"/Users/tyler/www/chart_modules/js/groupedbarchart.js",
+		"/Users/tyler/www/d3modules/index.html",
+		"/Users/tyler/www/d3modules/data/data.csv",
+		"/Users/tyler/www/d3modules/css/stylesheet.css",
+		"/Users/tyler/www/babs/data/stationStart.csv",
+		"/Users/tyler/www/babs/data/docksPA.txt",
+		"/Users/tyler/www/babs/data/heatmapPA.csv",
+		"/Users/tyler/www/babs/data/factorsMV.csv",
+		"/Users/tyler/www/babs/data/rideDurationHour.csv",
+		"/Users/tyler/www/babs/data/totalUse.csv",
+		"/Users/tyler/www/pollvault-dashboard/d3/maps/json/us.json",
+		"/Users/tyler/www/pollvault-dashboard/d3/maps/point.html",
+		"/Users/tyler/www/pollvault-dashboard/d3/maps/datamaps.html",
+		"/Users/tyler/Library/Application Support/Google/Chrome/Default/User StyleSheets/Custom.css",
+		"/Users/tyler/Library/Application Support/Sublime Text 2/Packages/User/Preferences.sublime-settings",
+		"/Users/tyler/Library/Application Support/Sublime Text 2/Packages/Default/Preferences.sublime-settings",
+		"/Users/tyler/www/babs/stylesheet.css",
+		"/Users/tyler/Library/Application Support/Sublime Text 2/Packages/User/Package Control.sublime-settings",
+		"/Users/tyler/www/babs/more.html",
+		"/Users/tyler/Library/Application Support/Brackets/state.json",
+		"/Users/tyler/www/itwaspurple/css/styles.css",
+		"/Users/tyler/www/itwaspurple/params.json",
+		"/Users/tyler/www/pollvault-d3/us.json",
+		"/Users/tyler/pollvault/pollvault-dashboard/data/Data.xml",
+		"/Users/tyler/selphy/SELTMP/Distribution",
+		"/Volumes/My Passport/Files/software/getcomics/working/getcomics.sh",
+		"/Volumes/My Passport/Files/software/getcomics/working/daysbetween.sh",
+		"/Volumes/My Passport/Files/software/mnt.sh~",
+		"/Volumes/My Passport/Files/software/getcomics/test.sh",
+		"/Volumes/My Passport/Files/software/getcomics/getcomics.sh",
+		"/Volumes/My Passport/Files/software/getcomics/working/calculate.sh",
+		"/Volumes/My Passport/Files/software/getcomics/nameonly",
+		"/Users/tyler/github/templater/css/foundation.css",
+		"/Users/tyler/github/fatdog/stylesheets/app.css",
+		"/Users/tyler/github/templater/js/foundation.css",
+		"/Users/tyler/github/fatdog/bower_components/foundation/scss/foundation/_settings.scss",
+		"/Users/tyler/github/fatdog/bower_components/foundation/scss/foundation.scss",
+		"/Users/tyler/github/fatdog/bower_components/foundation/bower.json",
+		"/Users/tyler/github/fatdog/config.rb",
+		"/Users/tyler/github/fatdog/bower_components/foundation/scss/foundation/_functions.scss",
+		"/Users/tyler/github/fatdog/bower_components/foundation/scss/normalize.scss",
+		"/Users/tyler/github/fatdog/README.md",
+		"/Users/tyler/github/fatdog/bower.json",
+		"/Users/tyler/github/fatdog/bower_components/foundation/css/foundation.css",
+		"/Users/tyler/github/fatdog/scss/app.scss",
+		"/Users/tyler/github/fatdog/scss/_settings.scss",
+		"/Users/tyler/github/fatdog/bower_components/foundation/css/normalize.css",
+		"/Users/tyler/github/fatdog/js/app.js",
+		"/Users/tyler/github/templater/contact page map modal",
+		"/Users/tyler/github/templater/banner.html",
+		"/Users/tyler/Google Drive/web/calc/script.js",
+		"/Users/tyler/README",
+		"/Users/tyler/fatdog3.svg",
+		"/Users/tyler/Google Drive/web/calc/calc4-script.js",
+		"/Users/tyler/Google Drive/web/calc/calc4-style.css",
+		"/Users/tyler/Google Drive/web/calc/calc4.html"
+	],
+	"find":
+	{
+		"height": 35.0
+	},
+	"find_in_files":
+	{
+		"height": 0.0,
+		"where_history":
+		[
+			"writers.csv",
+			""
+		]
+	},
+	"find_state":
+	{
+		"case_sensitive": false,
+		"find_history":
+		[
+			"parties",
+			"profile",
+			"org",
+			"type",
+			"frequency",
+			"name",
+			"age",
+			"population",
+			"==",
+			"Ep #([0-9.]+) - ([a-zA-Z0-9. ]+)\\(([a-zA-Z, ]+)\\)",
+			"map",
+			"duration",
+			"filter",
+			"map",
+			"system_rides",
+			"horizontalbar",
+			"^ ",
+			"^\\s",
+			"^ ",
+			",",
+			"$",
+			"\"",
+			"–",
+			"’",
+			"“",
+			"”",
+			"é",
+			"value",
+			"colorScale",
+			"colorHeat",
+			"slice",
+			"wilson",
+			"\"Name\",\"Vote %\"",
+			"\"[object Object]\",",
+			"Faircloth",
+			"faircloth",
+			"–",
+			"kyle",
+			"–",
+			"x1",
+			"x0",
+			"#multi",
+			"\"([0-9])\"",
+			"\"([0-9]{2})\"",
+			"\"([0-9]{3})\"",
+			"\"([0-9]{4})\"",
+			"\"([0-9]+)\"",
+			"font-family: \"Helvetica Neue\", \"Helvetica\", Helvetica, Arial, sans-serif;",
+			"font-family"
+		],
+		"highlight": true,
+		"in_selection": false,
+		"preserve_case": false,
+		"regex": true,
+		"replace_history":
+		[
+			"\\1, \\2, \\3",
+			"/1, /2, /3",
+			"",
+			"\\n",
+			"^",
+			"$",
+			",",
+			"",
+			"-",
+			"'",
+			"\"",
+			"e",
+			"",
+			"-",
+			"\\1",
+			"font-family: \"Open Sans\", \"Helvetica Neue\", \"Helvetica\", Helvetica, Arial, sans-serif;"
+		],
+		"reverse": false,
+		"show_context": true,
+		"use_buffer2": false,
+		"whole_word": false,
+		"wrap": true
+	},
+	"groups":
+	[
+		{
+			"sheets":
+			[
+				{
+					"buffer": 0,
+					"file": "index.html",
+					"settings":
+					{
+						"buffer_size": 671,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								0,
+								0
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/HTML/HTML.tmLanguage",
+							"tab_size": 2,
+							"translate_tabs_to_spaces": true
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"type": "text"
+				}
+			]
+		}
+	],
+	"incremental_find":
+	{
+		"height": 0.0
+	},
+	"input":
+	{
+		"height": 31.0
+	},
+	"layout":
+	{
+		"cells":
+		[
+			[
+				0,
+				0,
+				1,
+				1
+			]
+		],
+		"cols":
+		[
+			0.0,
+			1.0
+		],
+		"rows":
+		[
+			0.0,
+			1.0
+		]
+	},
+	"menu_visible": true,
+	"output.find_results":
+	{
+		"height": 100.0
+	},
+	"replace":
+	{
+		"height": 64.0
+	},
+	"save_all_on_build": true,
+	"select_file":
+	{
+		"height": 0.0,
+		"selected_items":
+		[
+		],
+		"width": 0.0
+	},
+	"select_project":
+	{
+		"height": 0.0,
+		"selected_items":
+		[
+		],
+		"width": 0.0
+	},
+	"show_minimap": true,
+	"show_open_files": true,
+	"show_tabs": true,
+	"side_bar_visible": true,
+	"side_bar_width": 263.0,
+	"status_bar_visible": true
+}

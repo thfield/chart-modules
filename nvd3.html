@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<meta charset="utf-8">
+<head>
+<link href="css/nv.d3.css" rel="stylesheet" type="text/css">
+<script src="js/d3.js"></script>
+<script src="js/nv.d3.js"></script>
+
+<style>
+
+body {
+  overflow-y:scroll;
+}
+
+text {
+  font: 12px sans-serif;
+}
+
+svg {
+  display: block;
+}
+
+#chart svg{
+  height: 500px;
+  width: 1000px;
+  min-width: 100px;
+  min-height: 100px;
+/*
+  margin: 10px;
+  Minimum height and width is a good idea to prevent negative SVG dimensions...
+  For example width should be =< margin.left + margin.right + 1,
+  of course 1 pixel for the entire chart would not be very useful, BUT should not have errors
+*/
+}
+
+</style>
+</head>
+
+<body>
+
+  <div id="chart">
+    <svg></svg>
+  </div>
+
+
+<script src="js/pvchart.js"></script>
+
+</body>
+
+</html>
+
