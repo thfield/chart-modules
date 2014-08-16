@@ -1,6 +1,6 @@
 function drawChart(containerId, dataPath, chartOptions) {
   d3.json(dataPath, function(data) {
-    console.log(data);
+    //console.log(data);
     
     nv.addGraph(function() {  
       //var chart = nv.models.multiBarChart()
