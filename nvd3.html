@@ -12,11 +12,22 @@
     display: block;
   }
 
-  #chart svg {
+  .barchart svg {
     height: 500px;
     width: 1000px;
     min-width: 100px;
     min-height: 100px;
+  }
+
+  svg text {
+    fill: black;
+  }
+
+  .datum_label {
+    font-size: 1em;
+  }
+  .datum_fact {
+    font-size: 3em;
   }
 
   </style>
@@ -25,15 +36,25 @@
 
 <body>
 
-  <div id="chart">
+  <div id="chart1" class="barchart">
     <svg></svg>
   </div>
-  <script src="js/pvchart.js"></script>
 
-  <div >
+  <div id="chart2" class="barchart">
+    <svg></svg>
+  </div>
+
+  <script src="js/pvchart.js"></script>
+  
+  <div>
     <svg id="test2"></svg>
   </div>
-  <script src="js/pvpie.js"></script>
+  <!--<script src="js/pvpie.js"></script>-->
+
+  <div>
+    <svg id="fact"></svg>
+  </div>
+  <script src="js/pvdatum.js"></script>
 
 
 </body>
