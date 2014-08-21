@@ -19,15 +19,20 @@
     min-height: 100px;
   }
 
-  svg text {
-    fill: black;
-  }
-
   .datum_label {
     font-size: 1em;
+    fill: black;
   }
   .datum_fact {
     font-size: 3em;
+    fill: black;
+  }
+
+  .piechart svg {
+    height: 400px;
+    width: 400px;
+    min-width: 100px;
+    min-height: 100px;
   }
 
   </style>
@@ -35,26 +40,21 @@
 </head>
 
 <body>
-
-  <div id="chart1" class="barchart">
-    <svg></svg>
-  </div>
-
-  <div id="chart2" class="barchart">
-    <svg></svg>
-  </div>
-
-  <script src="js/pvchart.js"></script>
-  
-  <div>
-    <svg id="test2"></svg>
-  </div>
-  <!--<script src="js/pvpie.js"></script>-->
-
-  <div>
-    <svg id="fact"></svg>
-  </div>
+<!--
+  <div id="fact"></div>
   <script src="js/pvdatum.js"></script>
+
+  <div id="chart1" class="barchart"></div>
+  <div id="chart2" class="barchart"></div>
+  <script src="js/pvchart.js"></script>
+-->  
+  <div id="chart3" class="piechart">
+    
+  </div>
+  <script src="js/pvpie.js"></script>
+
+  
+
 
 
 </body>

@@ -15,7 +15,7 @@ function datum(containerID, dataPath, chartOptions){
 
 	    data.value= numberWithCommas(data.value);
 
-	    var svg=d3.select(containerID)
+	    var svg=d3.select(containerID).append("svg")
 	    		.attr("width", chartOptions.width)
 	    		.attr("height", chartOptions.height)
 	    		.append("g");
