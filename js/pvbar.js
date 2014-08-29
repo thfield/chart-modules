@@ -16,6 +16,7 @@ function drawBar(containerId, dataPath, chartOptions) {
 
           chart.xAxis.rotateLabels(-45);
           // http://stackoverflow.com/questions/13136964/how-can-i-position-rotated-x-axis-labels-on-column-chart-using-nvd3
+          // better: http://bl.ocks.org/phoebebright/3061203
 /*
           var xTicks = d3.select('.nv-x.nv-axis > g').selectAll('g');
           xTicks
@@ -26,7 +27,12 @@ function drawBar(containerId, dataPath, chartOptions) {
           chart.margin(chartOptions.margins);
 
           chart.yAxis.tickFormat(d3.format(',f'));    
-          chart.options(chartOptions);    
+          chart.options(chartOptions);
+          //chart.forceY([0,d3.max(chart.y)]);
+          //chart.yAxis.scale().domain([0, maxValue]);    
+          //chart.forceY(d3.extent(data[0].values));  
+          //chart.forceY([0,100]);  
+          //chart.yDomain([0,d3.max(chart.y)]);
 
           //d3.select(containerId +' svg')
           var svg = d3.select(containerId).append('svg')
@@ -59,6 +65,7 @@ var opt1 = {
 },
   opt2 = {
    // xAxis.rotateLabels(-45)
+   color: ["#edf8fb","#ccece6","#99d8c9","#66c2a4","#2ca25f","#006d2c"],
    tooltips: true,
    showControls: false,
    style : 'multi',
@@ -66,5 +73,5 @@ var opt1 = {
 };  
 
 //drawBar('#chart1', 'data/pv.json', opt1);
-drawBar('#chart2', 'data/pv.json', opt2);
+drawBar('#chart2', 'data/pvstates.json', opt2);
   

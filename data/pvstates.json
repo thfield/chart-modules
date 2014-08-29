@@ -1,0 +1,344 @@
+
+[{
+	"title": "Total Voters in Each State",
+	"values" : [
+		
+		{
+			"label": "Alabama",
+			"abbr": "AL",
+			"value": 449
+		},
+		
+		{
+			"label": "Alaska",
+			"abbr": "AK",
+			"value": 92
+		},
+		
+		{
+			"label": "American Samoa",
+			"abbr": "AS",
+			"value": 8
+		},
+		
+		{
+			"label": "Arizona",
+			"abbr": "AZ",
+			"value": 956
+		},
+		
+		{
+			"label": "Arkansas",
+			"abbr": "AR",
+			"value": 569
+		},
+		
+		{
+			"label": "California",
+			"abbr": "CA",
+			"value": 4572
+		},
+		
+		{
+			"label": "Colorado",
+			"abbr": "CO",
+			"value": 381
+		},
+		
+		{
+			"label": "Connecticut",
+			"abbr": "CT",
+			"value": 979
+		},
+		
+		{
+			"label": "D.C.",
+			"abbr": "DC",
+			"value": 190
+		},
+		
+		{
+			"label": "Delaware",
+			"abbr": "DE",
+			"value": 116
+		},
+		
+		{
+			"label": "Florida",
+			"abbr": "FL",
+			"value": 1844
+		},
+		
+		{
+			"label": "Georgia",
+			"abbr": "GA",
+			"value": 691
+		},
+		
+		{
+			"label": "Guam",
+			"abbr": "GU",
+			"value": 2
+		},
+		
+		{
+			"label": "Hawaii",
+			"abbr": "HI",
+			"value": 142
+		},
+		
+		{
+			"label": "Idaho",
+			"abbr": "ID",
+			"value": 187
+		},
+		
+		{
+			"label": "Illinois",
+			"abbr": "IL",
+			"value": 1935
+		},
+		
+		{
+			"label": "Indiana",
+			"abbr": "IN",
+			"value": 487
+		},
+		
+		{
+			"label": "Iowa",
+			"abbr": "IA",
+			"value": 262
+		},
+		
+		{
+			"label": "Kansas",
+			"abbr": "KS",
+			"value": 463
+		},
+		
+		{
+			"label": "Kentucky",
+			"abbr": "KY",
+			"value": 331
+		},
+		
+		{
+			"label": "Louisiana",
+			"abbr": "LA",
+			"value": 1296
+		},
+		
+		{
+			"label": "Maine",
+			"abbr": "ME",
+			"value": 235
+		},
+		
+		{
+			"label": "Maryland",
+			"abbr": "MD",
+			"value": 607
+		},
+		
+		{
+			"label": "Massachusetts",
+			"abbr": "MA",
+			"value": 1160
+		},
+		
+		{
+			"label": "Michigan",
+			"abbr": "MI",
+			"value": 1475
+		},
+		
+		{
+			"label": "Minnesota",
+			"abbr": "MN",
+			"value": 664
+		},
+		
+		{
+			"label": "Mississippi",
+			"abbr": "MS",
+			"value": 209
+		},
+		
+		{
+			"label": "Missouri",
+			"abbr": "MO",
+			"value": 739
+		},
+		
+		{
+			"label": "Montana",
+			"abbr": "MT",
+			"value": 70
+		},
+		
+		{
+			"label": "Nebraska",
+			"abbr": "NE",
+			"value": 274
+		},
+		
+		{
+			"label": "Nevada",
+			"abbr": "NV",
+			"value": 138
+		},
+		
+		{
+			"label": "New Hampshire",
+			"abbr": "NH",
+			"value": 892
+		},
+		
+		{
+			"label": "New Jersey",
+			"abbr": "NJ",
+			"value": 528
+		},
+		
+		{
+			"label": "New Mexico",
+			"abbr": "NM",
+			"value": 158
+		},
+		
+		{
+			"label": "New York",
+			"abbr": "NY",
+			"value": 5261
+		},
+		
+		{
+			"label": "North Carolina",
+			"abbr": "NC",
+			"value": 488
+		},
+		
+		{
+			"label": "North Dakota",
+			"abbr": "ND",
+			"value": 86
+		},
+		
+		{
+			"label": "Northern Mariana Islands",
+			"abbr": "MP",
+			"value": 2
+		},
+		
+		{
+			"label": "Ohio",
+			"abbr": "OH",
+			"value": 1308
+		},
+		
+		{
+			"label": "Oklahoma",
+			"abbr": "OK",
+			"value": 457
+		},
+		
+		{
+			"label": "Oregon",
+			"abbr": "OR",
+			"value": 118
+		},
+		
+		{
+			"label": "Pennsylvania",
+			"abbr": "PA",
+			"value": 1961
+		},
+		
+		{
+			"label": "Puerto Rico",
+			"abbr": "PR",
+			"value": 5
+		},
+		
+		{
+			"label": "Rhode Island",
+			"abbr": "RI",
+			"value": 505
+		},
+		
+		{
+			"label": "South Carolina",
+			"abbr": "SC",
+			"value": 703
+		},
+		
+		{
+			"label": "South Dakota",
+			"abbr": "SD",
+			"value": 85
+		},
+		
+		{
+			"label": "Tennessee",
+			"abbr": "TN",
+			"value": 770
+		},
+		
+		{
+			"label": "Texas",
+			"abbr": "TX",
+			"value": 1314
+		},
+		
+		{
+			"label": "The Virgin Islands",
+			"abbr": "VI",
+			"value": 2
+		},
+		
+		{
+			"label": "Utah",
+			"abbr": "UT",
+			"value": 163
+		},
+		
+		{
+			"label": "Vermont",
+			"abbr": "VT",
+			"value": 82
+		},
+		
+		{
+			"label": "Virginia",
+			"abbr": "VA",
+			"value": 966
+		},
+		
+		{
+			"label": "Washington",
+			"abbr": "WA",
+			"value": 220
+		},
+		
+		{
+			"label": "West Virginia",
+			"abbr": "WV",
+			"value": 200
+		},
+		
+		{
+			"label": "Wisconsin",
+			"abbr": "WI",
+			"value": 452
+		},
+		
+		{
+			"label": "Wyoming",
+			"abbr": "WY",
+			"value": 78
+		}
+		
+		              	
+	]
+}]
