@@ -4,6 +4,34 @@
 		"selected_items":
 		[
 			[
+				"show",
+				"showLabels"
+			],
+			[
+				"value",
+				"valueFormat"
+			],
+			[
+				"do",
+				"donutRatio"
+			],
+			[
+				"sho",
+				"showLegend"
+			],
+			[
+				"chart",
+				"chartOptions"
+			],
+			[
+				"pie",
+				"pieVoteOptions"
+			],
+			[
+				"dra",
+				"drawBar"
+			],
+			[
 				"bar",
 				"barV_target"
 			],
@@ -16,10 +44,26 @@
 	"buffers":
 	[
 		{
-			"file": "index.html",
+			"file": "nvd3.html",
 			"settings":
 			{
-				"buffer_size": 671,
+				"buffer_size": 2101,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "js/line.js",
+			"settings":
+			{
+				"buffer_size": 936,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "data/line.json",
+			"settings":
+			{
+				"buffer_size": 1071,
 				"line_ending": "Unix"
 			}
 		}
@@ -27,9 +71,29 @@
 	"build_system": "",
 	"command_palette":
 	{
-		"height": 67.0,
+		"height": 207.0,
 		"selected_items":
 		[
+			[
+				"color",
+				"Color Scheme Editor: Edit current color scheme"
+			],
+			[
+				"instal",
+				"Package Control: Install Package"
+			],
+			[
+				"",
+				"Package Control: Install Package"
+			],
+			[
+				"package",
+				"Preferences: Browse Packages"
+			],
+			[
+				"pack",
+				"Package Control: Discover Packages"
+			],
 			[
 				"Package Control: in",
 				"Package Control: Install Package"
@@ -60,9 +124,52 @@
 	},
 	"file_history":
 	[
-		"/Users/tyler/www/chart_modules/js/bar_ex.js",
+		"/Users/tyler/www/chart_modules/data/line.json",
+		"/Users/tyler/www/chart_modules/data/states.json",
+		"/Users/tyler/www/chart_modules/js/pvpie.js",
+		"/Users/tyler/www/chart_modules/js/pvbar.js",
+		"/Users/tyler/www/chart_modules/data/pvstates.json",
+		"/Users/tyler/www/chart_modules/js/pvmap.js",
+		"/Users/tyler/www/chart_modules/js/uStates.js",
+		"/Users/tyler/www/chart_modules/data/state.json",
+		"/Users/tyler/www/chart_modules/js/pvdatum.js",
+		"/Users/tyler/www/nvd3/src/models/multiBarChart.js",
+		"/Users/tyler/www/nvd3/src/models/multiBar.js",
+		"/Users/tyler/Library/Application Support/Sublime Text 2/Packages/Color Scheme - Default/Tomorrow.tmTheme",
 		"/Users/tyler/www/chart_modules/data/dataPie.json",
+		"/Users/tyler/www/nvd3/src/models/pieChart.js",
+		"/Users/tyler/www/nvd3/src/models/pie.js",
+		"/Users/tyler/www/chart_modules/js/pvpie2.js",
+		"/Users/tyler/www/nvd3/src/utils.js",
+		"/Users/tyler/www/nvd3/examples/pie.html",
+		"/Users/tyler/www/nvd3/examples/pieChart.html",
+		"/Users/tyler/www/chart_modules/data/pv.json",
 		"/Users/tyler/www/chart_modules/js/pie.js",
+		"/Users/tyler/www/chart_modules/data/pvdatum.json",
+		"/Users/tyler/www/chart_modules/js/pvchart.js",
+		"/Users/tyler/www/chart_modules/js/nv.d3.js",
+		"/Users/tyler/www/nvd3/src/models/discreteBar.js",
+		"/Users/tyler/www/nvd3/src/models/discreteBarChart.js",
+		"/Users/tyler/www/chart_modules/js/pvdigit.js",
+		"/Users/tyler/www/chart_modules/css/nv.d3.css",
+		"/Users/tyler/www/chart_modules/example/js/stackedArea.js",
+		"/Users/tyler/www/chart_modules/example/stackedArea.html",
+		"/Users/tyler/www/chart_modules/example/data/pv.json",
+		"/Users/tyler/www/chart_modules/example/data/stackedAreaData.json",
+		"/Users/tyler/www/nvd3/examples/multiBarChart.html",
+		"/Users/tyler/www/chart_modules/data/stackedAreaData.json",
+		"/Users/tyler/www/chart_modules/example/stackedArea.js",
+		"/Users/tyler/www/chart_modules/example/stackedAreaData.json",
+		"/Users/tyler/www/nvd3/test/multiBarChartTest.html",
+		"/Users/tyler/www/nvd3/src/models/multiBarHorizontal.js",
+		"/Users/tyler/www/nvd3/examples/discreteBarChart.html",
+		"/Users/tyler/www/chart_modules/data/nvd3data.json",
+		"/Users/tyler/www/chart_modules/js/nvd3chart.js",
+		"/Users/tyler/www/chart_modules/stackedAreaData.json",
+		"/Users/tyler/www/chart_modules/data.json",
+		"/Users/tyler/www/nvd3/src/tooltip.js",
+		"/Users/tyler/www/nvd3/nv.d3.js",
+		"/Users/tyler/www/chart_modules/js/bar_ex.js",
 		"/Users/tyler/www/chart_modules/data/data.tsv",
 		"/Users/tyler/www/chart_modules/data/pieData.json",
 		"/Users/tyler/www/chart_modules/css/pie.css",
@@ -136,6 +243,7 @@
 		"height": 0.0,
 		"where_history":
 		[
+			"states.json",
 			"writers.csv",
 			""
 		]
@@ -145,6 +253,46 @@
 		"case_sensitive": false,
 		"find_history":
 		[
+			"containerId",
+			"uStatePaths",
+			"voters",
+			"//   ",
+			"class government",
+			"forcey",
+			"yscale",
+			"color",
+			"labelType",
+			"format",
+			"text",
+			"values",
+			"barsEnter.append('text')",
+			"showvalues",
+			"values",
+			"showvalues",
+			"discretebar",
+			"rotatelabels",
+			"discretebar",
+			"bar",
+			"rotate",
+			"value",
+			"defaultChartConfig",
+			"group",
+			"spacing",
+			"groupsp",
+			"group",
+			"valueformat",
+			"showvalues",
+			"values",
+			"valueFormat",
+			"showvalues",
+			"nv-bar",
+			"xtick",
+			"xticks",
+			"label",
+			"nv-axis",
+			"tick",
+			"discreteBar",
+			"tooltip",
 			"parties",
 			"profile",
 			"org",
@@ -201,6 +349,7 @@
 		"regex": true,
 		"replace_history":
 		[
+			"value",
 			"\\1, \\2, \\3",
 			"/1, /2, /3",
 			"",
@@ -227,32 +376,401 @@
 	"groups":
 	[
 		{
+			"selected": 1,
 			"sheets":
 			[
 				{
 					"buffer": 0,
-					"file": "index.html",
+					"file": "nvd3.html",
 					"settings":
 					{
-						"buffer_size": 671,
+						"buffer_size": 2101,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								0,
-								0
+								2066,
+								2066
 							]
 						],
 						"settings":
 						{
+							"codeintel": true,
+							"codeintel_config":
+							{
+								"JavaScript":
+								{
+									"codeintel_max_recursive_dir_depth": 2.0,
+									"codeintel_scan_files_in_project": false,
+									"javascriptExtraPaths":
+									[
+									]
+								},
+								"PHP":
+								{
+									"codeintel_max_recursive_dir_depth": 5.0,
+									"codeintel_scan_files_in_project": false,
+									"phpExtraPaths":
+									[
+									]
+								},
+								"Python":
+								{
+									"env":
+									{
+									}
+								}
+							},
+							"codeintel_enabled_languages":
+							[
+								"JavaScript",
+								"Mason",
+								"XBL",
+								"XUL",
+								"RHTML",
+								"SCSS",
+								"Python",
+								"HTML",
+								"Ruby",
+								"Python3",
+								"XML",
+								"Sass",
+								"XSLT",
+								"Django",
+								"HTML5",
+								"Perl",
+								"CSS",
+								"Twig",
+								"Less",
+								"Smarty",
+								"Node.js",
+								"Tcl",
+								"TemplateToolkit",
+								"PHP"
+							],
+							"codeintel_live": true,
+							"codeintel_live_enabled_languages":
+							[
+								"JavaScript",
+								"Mason",
+								"XBL",
+								"XUL",
+								"RHTML",
+								"SCSS",
+								"Python",
+								"HTML",
+								"Ruby",
+								"Python3",
+								"XML",
+								"Sass",
+								"XSLT",
+								"Django",
+								"HTML5",
+								"Perl",
+								"CSS",
+								"Twig",
+								"Less",
+								"Smarty",
+								"Node.js",
+								"Tcl",
+								"TemplateToolkit",
+								"PHP"
+							],
+							"codeintel_max_recursive_dir_depth": 10.0,
+							"codeintel_scan_exclude_dir":
+							{
+								"JavaScript":
+								[
+									"/build/",
+									"/min/"
+								]
+							},
+							"codeintel_scan_files_in_project": true,
+							"codeintel_selected_catalogs":
+							[
+								"PyWin32",
+								"jQuery",
+								"Rails"
+							],
+							"codeintel_snippets": true,
+							"codeintel_syntax_map":
+							{
+								"Python Django": "Python"
+							},
+							"codeintel_tooltips": "popup",
+							"sublime_auto_complete": true,
 							"syntax": "Packages/HTML/HTML.tmLanguage",
 							"tab_size": 2,
 							"translate_tabs_to_spaces": true
 						},
 						"translation.x": 0.0,
+						"translation.y": 1265.0,
+						"zoom_level": 1.0
+					},
+					"type": "text"
+				},
+				{
+					"buffer": 1,
+					"file": "js/line.js",
+					"settings":
+					{
+						"buffer_size": 936,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								18,
+								18
+							]
+						],
+						"settings":
+						{
+							"codeintel": true,
+							"codeintel_config":
+							{
+								"JavaScript":
+								{
+									"codeintel_max_recursive_dir_depth": 2.0,
+									"codeintel_scan_files_in_project": false,
+									"javascriptExtraPaths":
+									[
+									]
+								},
+								"PHP":
+								{
+									"codeintel_max_recursive_dir_depth": 5.0,
+									"codeintel_scan_files_in_project": false,
+									"phpExtraPaths":
+									[
+									]
+								},
+								"Python":
+								{
+									"env":
+									{
+									}
+								}
+							},
+							"codeintel_enabled_languages":
+							[
+								"JavaScript",
+								"Mason",
+								"XBL",
+								"XUL",
+								"RHTML",
+								"SCSS",
+								"Python",
+								"HTML",
+								"Ruby",
+								"Python3",
+								"XML",
+								"Sass",
+								"XSLT",
+								"Django",
+								"HTML5",
+								"Perl",
+								"CSS",
+								"Twig",
+								"Less",
+								"Smarty",
+								"Node.js",
+								"Tcl",
+								"TemplateToolkit",
+								"PHP"
+							],
+							"codeintel_live": true,
+							"codeintel_live_enabled_languages":
+							[
+								"JavaScript",
+								"Mason",
+								"XBL",
+								"XUL",
+								"RHTML",
+								"SCSS",
+								"Python",
+								"HTML",
+								"Ruby",
+								"Python3",
+								"XML",
+								"Sass",
+								"XSLT",
+								"Django",
+								"HTML5",
+								"Perl",
+								"CSS",
+								"Twig",
+								"Less",
+								"Smarty",
+								"Node.js",
+								"Tcl",
+								"TemplateToolkit",
+								"PHP"
+							],
+							"codeintel_max_recursive_dir_depth": 10.0,
+							"codeintel_scan_exclude_dir":
+							{
+								"JavaScript":
+								[
+									"/build/",
+									"/min/"
+								]
+							},
+							"codeintel_scan_files_in_project": true,
+							"codeintel_selected_catalogs":
+							[
+								"PyWin32",
+								"jQuery",
+								"Rails"
+							],
+							"codeintel_snippets": true,
+							"codeintel_syntax_map":
+							{
+								"Python Django": "Python"
+							},
+							"codeintel_tooltips": "popup",
+							"sublime_auto_complete": true,
+							"syntax": "Packages/JavaScript/JavaScript.tmLanguage",
+							"tab_size": 2,
+							"translate_tabs_to_spaces": true
+						},
+						"translation.x": 0.0,
 						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"type": "text"
+				},
+				{
+					"buffer": 2,
+					"file": "data/line.json",
+					"settings":
+					{
+						"buffer_size": 1071,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								1070,
+								1070
+							]
+						],
+						"settings":
+						{
+							"codeintel": true,
+							"codeintel_config":
+							{
+								"JavaScript":
+								{
+									"codeintel_max_recursive_dir_depth": 2.0,
+									"codeintel_scan_files_in_project": false,
+									"javascriptExtraPaths":
+									[
+									]
+								},
+								"PHP":
+								{
+									"codeintel_max_recursive_dir_depth": 5.0,
+									"codeintel_scan_files_in_project": false,
+									"phpExtraPaths":
+									[
+									]
+								},
+								"Python":
+								{
+									"env":
+									{
+									}
+								}
+							},
+							"codeintel_enabled_languages":
+							[
+								"JavaScript",
+								"Mason",
+								"XBL",
+								"XUL",
+								"RHTML",
+								"SCSS",
+								"Python",
+								"HTML",
+								"Ruby",
+								"Python3",
+								"XML",
+								"Sass",
+								"XSLT",
+								"Django",
+								"HTML5",
+								"Perl",
+								"CSS",
+								"Twig",
+								"Less",
+								"Smarty",
+								"Node.js",
+								"Tcl",
+								"TemplateToolkit",
+								"PHP"
+							],
+							"codeintel_live": true,
+							"codeintel_live_enabled_languages":
+							[
+								"JavaScript",
+								"Mason",
+								"XBL",
+								"XUL",
+								"RHTML",
+								"SCSS",
+								"Python",
+								"HTML",
+								"Ruby",
+								"Python3",
+								"XML",
+								"Sass",
+								"XSLT",
+								"Django",
+								"HTML5",
+								"Perl",
+								"CSS",
+								"Twig",
+								"Less",
+								"Smarty",
+								"Node.js",
+								"Tcl",
+								"TemplateToolkit",
+								"PHP"
+							],
+							"codeintel_max_recursive_dir_depth": 10.0,
+							"codeintel_scan_exclude_dir":
+							{
+								"JavaScript":
+								[
+									"/build/",
+									"/min/"
+								]
+							},
+							"codeintel_scan_files_in_project": true,
+							"codeintel_selected_catalogs":
+							[
+								"PyWin32",
+								"jQuery",
+								"Rails"
+							],
+							"codeintel_snippets": true,
+							"codeintel_syntax_map":
+							{
+								"Python Django": "Python"
+							},
+							"codeintel_tooltips": "popup",
+							"sublime_auto_complete": true,
+							"syntax": "Packages/JavaScript/JSON.tmLanguage",
+							"tab_size": 4,
+							"translate_tabs_to_spaces": true
+						},
+						"translation.x": 0.0,
+						"translation.y": 20.0,
 						"zoom_level": 1.0
 					},
 					"type": "text"
