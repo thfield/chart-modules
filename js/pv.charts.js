@@ -90,7 +90,7 @@ function pv_drawPie(containerId, dataPath, opt) {
 
 
 
-function pv_datum(opt){
+function pv_drawDatum(opt){
   // ---- available options ----
   // opt.containerId : id for containing div
   // opt.dataPath: path to json file with data
@@ -128,7 +128,7 @@ function pv_datum(opt){
 
 
 
-function pv_line(opt){
+function pv_drawline(opt){
   // ---- available options ----
   // opt.dataPath = string, path to json file with data
   // opt.containerId = string, id of div containing map
