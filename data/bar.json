@@ -1,328 +1,344 @@
+
 [{
-	"key": "Orgs in each State",
+	"title": "Electoral Votes by State",
 	"values" : [
 		
 		{
-			
 			"label": "Alabama",
-			"value": "13",
+			"abbr": "AL",
+			"value": 9
 		},
 		
 		{
-			
 			"label": "Alaska",
-			"value": "14",
+			"abbr": "AK",
+			"value": 3
 		},
 		
 		{
-			
+			"label": "American Samoa",
+			"abbr": "AS",
+			"value": 0
+		},
+		
+		{
 			"label": "Arizona",
-			"value": "16",
+			"abbr": "AZ",
+			"value": 11
 		},
 		
 		{
-			
 			"label": "Arkansas",
-			"value": "12",
+			"abbr": "AR",
+			"value": 6
 		},
 		
 		{
-			
 			"label": "California",
-			"value": "54",
+			"abbr": "CA",
+			"value": 55
 		},
 		
 		{
-			
 			"label": "Colorado",
-			"value": "14",
+			"abbr": "CO",
+			"value": 9
 		},
 		
 		{
-			
 			"label": "Connecticut",
-			"value": "15",
+			"abbr": "CT",
+			"value": 7
 		},
 		
 		{
-			
 			"label": "D.C.",
-			"value": "26",
+			"abbr": "DC",
+			"value": 3
 		},
 		
 		{
-			
 			"label": "Delaware",
-			"value": "13",
+			"abbr": "DE",
+			"value": 3
 		},
 		
 		{
-			
 			"label": "Florida",
-			"value": "28",
+			"abbr": "FL",
+			"value": 29
 		},
 		
 		{
-			
 			"label": "Georgia",
-			"value": "12",
+			"abbr": "GA",
+			"value": 16
 		},
 		
 		{
-			
+			"label": "Guam",
+			"abbr": "GU",
+			"value": 0
+		},
+		
+		{
 			"label": "Hawaii",
-			"value": "11",
+			"abbr": "HI",
+			"value": 4
 		},
 		
 		{
-			
 			"label": "Idaho",
-			"value": "15",
+			"abbr": "ID",
+			"value": 4
 		},
 		
 		{
-			
 			"label": "Illinois",
-			"value": "40",
+			"abbr": "IL",
+			"value": 20
 		},
 		
 		{
-			
 			"label": "Indiana",
-			"value": "22",
+			"abbr": "IN",
+			"value": 11
 		},
 		
 		{
-			
 			"label": "Iowa",
-			"value": "13",
+			"abbr": "IA",
+			"value": 6
 		},
 		
 		{
-			
 			"label": "Kansas",
-			"value": "12",
+			"abbr": "KS",
+			"value": 6
 		},
 		
 		{
-			
 			"label": "Kentucky",
-			"value": "12",
+			"abbr": "KY",
+			"value": 8
 		},
 		
 		{
-			
 			"label": "Louisiana",
-			"value": "11",
+			"abbr": "LA",
+			"value": 8
 		},
 		
 		{
-			
 			"label": "Maine",
-			"value": "12",
+			"abbr": "ME",
+			"value": 4
 		},
 		
 		{
-			
 			"label": "Maryland",
-			"value": "15",
+			"abbr": "MD",
+			"value": 10
 		},
 		
 		{
-			
 			"label": "Massachusetts",
-			"value": "18",
+			"abbr": "MA",
+			"value": 11
 		},
 		
 		{
-			
 			"label": "Michigan",
-			"value": "18",
+			"abbr": "MI",
+			"value": 16
 		},
 		
 		{
-			
 			"label": "Minnesota",
-			"value": "20",
+			"abbr": "MN",
+			"value": 10
 		},
 		
 		{
-			
 			"label": "Mississippi",
-			"value": "11",
+			"abbr": "MS",
+			"value": 6
 		},
 		
 		{
-			
 			"label": "Missouri",
-			"value": "15",
+			"abbr": "MO",
+			"value": 10
 		},
 		
 		{
-			
 			"label": "Montana",
-			"value": "16",
+			"abbr": "MT",
+			"value": 3
 		},
 		
 		{
-			
 			"label": "Nebraska",
-			"value": "16",
+			"abbr": "NE",
+			"value": 5
 		},
 		
 		{
-			
 			"label": "Nevada",
-			"value": "15",
+			"abbr": "NV",
+			"value": 6
 		},
 		
 		{
-			
 			"label": "New Hampshire",
-			"value": "15",
+			"abbr": "NH",
+			"value": 4
 		},
 		
 		{
-			
 			"label": "New Jersey",
-			"value": "15",
+			"abbr": "NJ",
+			"value": 14
 		},
 		
 		{
-			
 			"label": "New Mexico",
-			"value": "12",
+			"abbr": "NM",
+			"value": 5
 		},
 		
 		{
-			
 			"label": "New York",
-			"value": "166",
+			"abbr": "NY",
+			"value": 29
 		},
 		
 		{
-			
 			"label": "North Carolina",
-			"value": "43",
+			"abbr": "NC",
+			"value": 15
 		},
 		
 		{
-			
 			"label": "North Dakota",
-			"value": "13",
+			"abbr": "ND",
+			"value": 3
 		},
 		
 		{
-			
+			"label": "Northern Mariana Islands",
+			"abbr": "MP",
+			"value": 0
+		},
+		
+		{
 			"label": "Ohio",
-			"value": "43",
+			"abbr": "OH",
+			"value": 18
 		},
 		
 		{
-			
 			"label": "Oklahoma",
-			"value": "13",
+			"abbr": "OK",
+			"value": 7
 		},
 		
 		{
-			
 			"label": "Oregon",
-			"value": "20",
+			"abbr": "OR",
+			"value": 7
 		},
 		
 		{
-			
 			"label": "Pennsylvania",
-			"value": "23",
+			"abbr": "PA",
+			"value": 20
 		},
 		
 		{
-			
 			"label": "Puerto Rico",
-			"value": "1",
+			"abbr": "PR",
+			"value": 0
 		},
 		
 		{
-			
 			"label": "Rhode Island",
-			"value": "11",
+			"abbr": "RI",
+			"value": 4
 		},
 		
 		{
-			
 			"label": "South Carolina",
-			"value": "14",
+			"abbr": "SC",
+			"value": 9
 		},
 		
 		{
-			
 			"label": "South Dakota",
-			"value": "11",
+			"abbr": "SD",
+			"value": 3
 		},
 		
 		{
-			
 			"label": "Tennessee",
-			"value": "17",
+			"abbr": "TN",
+			"value": 11
 		},
 		
 		{
-			
 			"label": "Texas",
-			"value": "64",
+			"abbr": "TX",
+			"value": 38
 		},
 		
 		{
-			
 			"label": "The Virgin Islands",
-			"value": "2",
+			"abbr": "VI",
+			"value": 0
 		},
 		
 		{
-			
 			"label": "Utah",
-			"value": "10",
+			"abbr": "UT",
+			"value": 6
 		},
 		
 		{
-			
 			"label": "Vermont",
-			"value": "11",
+			"abbr": "VT",
+			"value": 3
 		},
 		
 		{
-			
 			"label": "Virginia",
-			"value": "17",
+			"abbr": "VA",
+			"value": 13
 		},
 		
 		{
-			
 			"label": "Washington",
-			"value": "17",
+			"abbr": "WA",
+			"value": 12
 		},
 		
 		{
-			
 			"label": "West Virginia",
-			"value": "17",
+			"abbr": "WV",
+			"value": 5
 		},
 		
 		{
-			
 			"label": "Wisconsin",
-			"value": "15",
+			"abbr": "WI",
+			"value": 10
 		},
 		
 		{
-			
 			"label": "Wyoming",
-			"value": "13",
-		},
+			"abbr": "WY",
+			"value": 3
+		}
 		
-		{
-			"dummy": "dummy",
-			"dummy": "dummy",
-		}                	
+		              	
 	]
 }]

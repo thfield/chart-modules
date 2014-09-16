@@ -5,26 +5,97 @@
     <meta charset="utf-8">
     <title>Chart Modules</title>
     <link rel="stylesheet" href="css/stylesheet.css">
+    <link rel="stylesheet" href="css/nv.d3.css">
 </head>
 
 <body>
   <script src="js/d3.js" charset="utf-8"></script>
+  <script src="js/pv.nv.d3.js" charset="utf-8"></script>
+  <script src="js/pv.charts.js" charset="utf-8"></script>
 
   <div class="module">
-    <h1>Pie Module</h1>
-    <div id="pie_target"></div>
-    <script src="js/pie.js"></script>
-    <link rel="stylesheet" href="css/pie.css">
-    Input variables in js/pie.js 
+    <h1>Bar Module</h1>
+    <div id="barDiv" class="barchart"></div>
+    <script>
+      pv_drawBar({
+        containerId: 'barDiv',
+        dataPath: 'data/bar.json',
+        margins: {top:30, bottom:80, left:30, right:30},
+        showControls: false,
+        rotateLabels: 45
+      });
+    </script>
+    <link rel="stylesheet" href="css/bar.css">
   </div>  
 
   <div class="module">
-    <h1>Vertical Bar Module</h1>
-    <div id='barV_target'></div>
-    <script src="js/bar_ex.js"></script>
-    <link rel="stylesheet" href="css/barV.css">
-    Input variables in js/barV.js
-  </div>
+    <h1>Datum Module</h1>
+    <p>Population of the US: </p>
+    <div id="datumDiv" class="datum"></div>
+    <script>
+      pv_datum({  
+        'containerId': 'datumDiv', 
+        'dataPath': 'data/datum.json'
+      });
+    </script>
+    <link rel="stylesheet" href="css/datum.css">
+  </div> 
+
+  
+  <div class="module">
+    <h1>Map Module (spectrum color)</h1>
+    <div id="mapDivTT" class="map-tooltip"></div>
+    <div id="mapDiv" class="mapchart"></div>
+    <p>States are shaded by their electoral votes, all states are shaded along a spectrum</p>
+    <script>
+      pv_drawMap({
+        'containerId':'mapDiv',
+        'ttId':'mapDivTT',
+        'dataPath': 'data/map.json',
+        'indVar': 'Electors',
+        'title': 'Electoral Votes by State',
+        'multiColor': false
+      });
+    </script>
+    <link rel="stylesheet" href="css/map.css">
+  </div> 
+
+  <div class="module">
+    <h1>Map Module (quantum color)</h1>
+    <div id="mapDiv2TT" class="map-tooltip"></div>
+    <div id="mapDiv2" class="mapchart"></div>
+    <p>States are shaded by their electoral votes, states with similar numbers of votes have the same shade</p>
+    <script>
+      pv_drawMap({
+        'containerId':'mapDiv2',
+        'ttId':'mapDiv2TT',
+        'dataPath': 'data/map.json',
+        'indVar': 'Electors',
+        'title': 'Electoral Votes by State',
+        'multiColor': false,
+        'quantum':true
+      });
+    </script>
+    <!--<link rel="stylesheet" href="css/map.css">-->
+  </div> 
+
+  <div class="module">
+    <h1>Map Module (multi-category spectrum color)</h1>
+    <div id="mapDiv3TT" class="map-tooltip"></div>
+    <div id="mapDiv3" class="mapchart"></div>
+    <p>States are colored based on electoral winner of 2012 Presidential election, and shaded by the number of electoral votes</p>
+    <script>
+      pv_drawMap({
+        'containerId':'mapDiv3',
+        'ttId':'mapDiv3TT',
+        'dataPath': 'data/map.json',
+        'indVar': 'Electors',
+        'title': 'Electoral Votes by State',
+        'multiColor': true
+      });
+    </script>
+    <!--<link rel="stylesheet" href="css/map.css">-->
+  </div> 
 
 </body>
 

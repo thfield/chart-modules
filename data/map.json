@@ -1,0 +1,460 @@
+{
+"data":{
+		
+		"AS": {
+			"state": "American Samoa",
+			"value": 0,
+			"rank": 1,
+			"quantum": 0,
+			"category": "default"
+			},
+
+		"GU": {
+			"state": "Guam",
+			"value": 0,
+			"rank": 2,
+			"quantum": 0,
+			"category": "default"
+			},
+
+		"MP": {
+			"state": "Northern Mariana Islands",
+			"value": 0,
+			"rank": 3,
+			"quantum": 0,
+			"category": "default"
+			},
+		
+		"PR": {
+			"state": "Puerto Rico",
+			"value": 0,
+			"rank": 4,
+			"quantum": 0,
+			"category": "default"
+			},
+		
+		"VI": {
+			"state": "The Virgin Islands",
+			"value": 0,
+			"rank": 5,
+			"quantum": 0,
+			"category": "default"
+			},
+
+		"AK": {
+			"state": "Alaska",
+			"value": 3,
+			"rank": 6,
+			"quantum": 1,
+			"category": "Republican"
+			},
+
+		"DE": {
+			"state": "Delaware",
+			"value": 3,
+			"rank": 7,
+			"quantum": 1,
+			"category": "Democratic"
+			},
+
+		"DC": {
+			"state": "D.C.",
+			"value": 3,
+			"rank": 8,
+			"quantum": 1,
+			"category": "Democratic"
+			},	
+
+		"MT": {
+			"state": "Montana",
+			"value": 3,
+			"rank": 9,
+			"quantum": 1,
+			"category": "Republican"
+			},
+
+		"ND": {
+			"state": "North Dakota",
+			"value": 3,
+			"rank": 10,
+			"quantum": 1,
+			"category": "Republican"
+			},
+
+		"SD": {
+			"state": "South Dakota",
+			"value": 3,
+			"rank": 11,
+			"quantum": 1,
+			"category": "Republican"
+			},
+
+		"VT": {
+			"state": "Vermont",
+			"value": 3,
+			"rank": 12,
+			"quantum": 1,
+			"category": "Democratic"
+			},
+
+		"WY": {
+			"state": "Wyoming",
+			"value": 3,
+			"rank": 13,
+			"quantum": 1,
+			"category": "Republican"
+			},
+
+		"HI": {
+			"state": "Hawaii",
+			"value": 4,
+			"rank": 14,
+			"quantum": 2,
+			"category": "Democratic"
+			},
+
+		"ID": {
+			"state": "Idaho",
+			"value": 4,
+			"rank": 15,
+			"quantum": 2,
+			"category": "Republican"
+			},
+
+		"ME": {
+			"state": "Maine",
+			"value": 4,
+			"rank": 16,
+			"quantum": 2,
+			"category": "Democratic"
+			},
+
+		"NH": {
+			"state": "New Hampshire",
+			"value": 4,
+			"rank": 17,
+			"quantum": 2,
+			"category": "Democratic"
+			},
+
+		"RI": {
+			"state": "Rhode Island",
+			"value": 4,
+			"rank": 18,
+			"quantum": 2,
+			"category": "Democratic"
+			},
+
+		"NE": {
+			"state": "Nebraska",
+			"value": 5,
+			"rank": 19,
+			"quantum": 2,
+			"category": "Republican"
+			},
+
+		"NM": {
+			"state": "New Mexico",
+			"value": 5,
+			"rank": 20,
+			"quantum": 2,
+			"category": "Democratic"
+			},
+
+		"WV": {
+			"state": "West Virginia",
+			"value": 5,
+			"rank": 21,
+			"quantum": 2,
+			"category": "Republican"
+			},
+
+		"AR": {
+			"state": "Arkansas",
+			"value": 6,
+			"rank": 22,
+			"quantum": 3,
+			"category": "Republican"
+			},
+
+		"IA": {
+			"state": "Iowa",
+			"value": 6,
+			"rank": 23,
+			"quantum": 3,
+			"category": "Democratic"
+			},
+
+		"KS": {
+			"state": "Kansas",
+			"value": 6,
+			"rank": 24,
+			"quantum": 3,
+			"category": "Republican"
+			},
+
+		"MS": {
+			"state": "Mississippi",
+			"value": 6,
+			"rank": 25,
+			"quantum": 3,
+			"category": "Republican"
+			},
+
+		"NV": {
+			"state": "Nevada",
+			"value": 6,
+			"rank": 26,
+			"quantum": 3,
+			"category": "Democratic"
+			},
+
+		"UT": {
+			"state": "Utah",
+			"value": 6,
+			"rank": 27,
+			"quantum": 3,
+			"category": "Republican"
+			},
+
+		"CT": {
+			"state": "Connecticut",
+			"value": 7,
+			"rank": 28,
+			"quantum": 3,
+			"category": "Democratic"
+			},
+
+		"OK": {
+			"state": "Oklahoma",
+			"value": 7,
+			"rank": 29,
+			"quantum": 3,
+			"category": "Republican"
+			},
+
+		"OR": {
+			"state": "Oregon",
+			"value": 7,
+			"rank": 30,
+			"quantum": 3,
+			"category": "Democratic"
+			},
+				
+		"KY": {
+			"state": "Kentucky",
+			"value": 8,
+			"rank": 31,
+			"quantum": 4,
+			"category": "Republican"
+			},
+
+		"LA": {
+			"state": "Louisiana",
+			"value": 8,
+			"rank": 32,
+			"quantum": 4,
+			"category": "Republican"
+			},
+		
+		"AL": {
+			"state": "Alabama",
+			"value": 9,
+			"rank": 33,
+			"quantum": 4,
+			"category": "Republican"
+			},
+			
+		"CO": {
+			"state": "Colorado",
+			"value": 9,
+			"rank": 34,
+			"quantum": 4,
+			"category": "Democratic"
+			},
+		
+		"SC": {
+			"state": "South Carolina",
+			"value": 9,
+			"rank": 35,
+			"quantum": 4,
+			"category": "Republican"
+			},
+
+		"MD": {
+			"state": "Maryland",
+			"value": 10,
+			"rank": 36,
+			"quantum": 5,
+			"category": "Democratic"
+			},
+
+		"MN": {
+			"state": "Minnesota",
+			"value": 10,
+			"rank": 37,
+			"quantum": 5,
+			"category": "Democratic"
+			},
+
+		"MO": {
+			"state": "Missouri",
+			"value": 10,
+			"rank": 38,
+			"quantum": 5,
+			"category": "Republican"
+			},
+
+		"WI": {
+			"state": "Wisconsin",
+			"value": 10,
+			"rank": 39,
+			"quantum": 5,
+			"category": "Democratic"
+			},
+
+		"AZ": {
+			"state": "Arizona",
+			"value": 11,
+			"rank": 40,
+			"quantum": 6,
+			"category": "Republican"
+			},
+
+		"IN": {
+			"state": "Indiana",
+			"value": 11,
+			"rank": 41,
+			"quantum": 6,
+			"category": "Republican"
+			},
+
+		"MA": {
+			"state": "Massachusetts",
+			"value": 11,
+			"rank": 42,
+			"quantum": 6,
+			"category": "Democratic"
+			},
+
+		"TN": {
+			"state": "Tennessee",
+			"value": 11,
+			"rank": 43,
+			"quantum": 6,
+			"category": "Republican"
+			},
+
+		"WA": {
+			"state": "Washington",
+			"value": 12,
+			"rank": 44,
+			"quantum": 6,
+			"category": "Democratic"
+			},
+				
+		"VA": {
+			"state": "Virginia",
+			"value": 13,
+			"rank": 45,
+			"quantum": 6,
+			"category": "Democratic"
+			},
+
+		"NJ": {
+			"state": "New Jersey",
+			"value": 14,
+			"rank": 46,
+			"quantum": 6,
+			"category": "Democratic"
+			},
+
+		"NC": {
+			"state": "North Carolina",
+			"value": 15,
+			"rank": 47,
+			"quantum": 6,
+			"category": "Republican"
+			},
+			
+		"GA": {
+			"state": "Georgia",
+			"value": 16,
+			"rank": 48,
+			"quantum": 7,
+			"category": "Republican"
+			},
+
+		"MI": {
+			"state": "Michigan",
+			"value": 16,
+			"rank": 49,
+			"quantum": 7,
+			"category": "Democratic"
+			},
+
+		"OH": {
+			"state": "Ohio",
+			"value": 18,
+			"rank": 50,
+			"quantum": 7,
+			"category": "Democratic"
+			},
+
+		"IL": {
+			"state": "Illinois",
+			"value": 20,
+			"rank": 51,
+			"quantum": 7,
+			"category": "Democratic"
+			},
+
+		"PA": {
+			"state": "Pennsylvania",
+			"value": 20,
+			"rank": 52,
+			"quantum": 7,
+			"category": "Democratic"
+			},
+		
+		"FL": {
+			"state": "Florida",
+			"value": 29,
+			"rank": 53,
+			"quantum": 8,
+			"category": "Democratic"
+			},
+
+		"NY": {
+			"state": "New York",
+			"value": 29,
+			"rank": 54,
+			"quantum": 8,
+			"category": "Democratic"
+			},
+
+		"TX": {
+			"state": "Texas",
+			"value": 38,
+			"rank": 55,
+			"quantum": 9,
+			"category": "Republican"
+			},
+				
+		"CA": {
+			"state": "California",
+			"value": 55,
+			"rank": 56,
+			"quantum": 9,
+			"category": "Democratic"
+			}
+},
+	"metadata":{
+		"categoryColor": [
+			["default"],
+			["Republican"], 
+			["Democratic"]		
+		]
+	}
+
+}

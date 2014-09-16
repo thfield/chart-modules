@@ -1,0 +1,17 @@
+.datum_fact {
+  font-size: 3.5em;
+  font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+  fill: #9933cc;
+}
+.datum_label {
+  font-size: 1em;
+  font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+  fill: #6600cc;
+}
+.datum {
+	margin-bottom: 20px;
+}
+#datumDiv {
+	height: 3.5em;
+	width: 400px;
+}

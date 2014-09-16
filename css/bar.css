@@ -1,0 +1,13 @@
+.barchart svg {
+  /*height: 500px;
+  width: 960px;*/
+  min-width: 100px;
+  min-height: 100px;
+}
+
+#barDiv {
+	height: 500px;
+	width: 900px;
+}
+
+#barDiv .barcolor {fill: #9933cc;}
