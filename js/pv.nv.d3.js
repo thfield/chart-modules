@@ -880,30 +880,31 @@ nv.dispatch = d3.dispatch('render_start', 'render_end');
 // *************************************************************************
 //    nv.utils.____
 // *************************************************************************
+
   nv.utils.windowSize = function() {
-      // Sane defaults
-      var size = {width: 640, height: 480};
+    // Sane defaults
+    var size = {width: 640, height: 480};
 
-      // Earlier IE uses Doc.body
-      if (document.body && document.body.offsetWidth) {
-          size.width = document.body.offsetWidth;
-          size.height = document.body.offsetHeight;
-      }
+    // Earlier IE uses Doc.body
+    if (document.body && document.body.offsetWidth) {
+        size.width = document.body.offsetWidth;
+        size.height = document.body.offsetHeight;
+    }
 
-      // IE can use depending on mode it is in
-      if (document.compatMode=='CSS1Compat' &&
-          document.documentElement &&
-          document.documentElement.offsetWidth ) {
-          size.width = document.documentElement.offsetWidth;
-          size.height = document.documentElement.offsetHeight;
-      }
+    // IE can use depending on mode it is in
+    if (document.compatMode=='CSS1Compat' &&
+        document.documentElement &&
+        document.documentElement.offsetWidth ) {
+        size.width = document.documentElement.offsetWidth;
+        size.height = document.documentElement.offsetHeight;
+    }
 
-      // Most recent browsers use
-      if (window.innerWidth && window.innerHeight) {
-          size.width = window.innerWidth;
-          size.height = window.innerHeight;
-      }
-      return (size);
+    // Most recent browsers use
+    if (window.innerWidth && window.innerHeight) {
+        size.width = window.innerWidth;
+        size.height = window.innerHeight;
+    }
+    return (size);
   };
 
   nv.utils.windowResize = function(fun){
@@ -5027,6 +5028,7 @@ nv.dispatch = d3.dispatch('render_start', 'render_end');
       , yAxis = nv.models.axis()
       , legend = nv.models.legend()
       , controls = nv.models.legend()
+      , sortable = nv.models.legend()
       ;
 
     var margin = {top: 30, right: 20, bottom: 50, left: 60}
@@ -5035,6 +5037,7 @@ nv.dispatch = d3.dispatch('render_start', 'render_end');
       , color = nv.utils.defaultColor()
       , showControls = false
       , showLegend = false
+      , showSortable = false
       , showXAxis = true
       , showYAxis = true
       , rightAlignYAxis = false
@@ -5212,7 +5215,33 @@ nv.dispatch = d3.dispatch('render_start', 'render_end');
         }
 
         //------------------------------------------------------------
+        
+        //------------------------------------------------------------
+        // Sortable
 
+        if (showSortable) {
+          sortable.width(availableWidth - controlWidth());
+
+          if (multibar.barColor())
+            data.forEach(function(series,i) {
+              series.color = d3.rgb('#ccc').darker(i * 1.5).toString();
+            })
+
+          g.select('.nv-legendWrap')
+              .datum(data)
+              .call(legend);
+
+          if ( margin.top != legend.height()) {
+            margin.top = legend.height();
+            availableHeight = (height || parseInt(container.style('height')) || 400)
+                               - margin.top - margin.bottom;
+          }
+
+          g.select('.nv-legendWrap')
+              .attr('transform', 'translate(' + controlWidth() + ',' + (-margin.top) +')');
+        }
+
+        //------------------------------------------------------------
 
         wrap.attr('transform', 'translate(' + margin.left + ',' + margin.top + ')');
 

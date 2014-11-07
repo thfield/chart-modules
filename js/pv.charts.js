@@ -63,10 +63,9 @@ function pv_drawBar(opt) {
 }
 
 
-
-function pv_drawPie(containerId, dataPath, opt) {
+function pv_drawPieOld(containerId, dataPath, opt) {
   //uncomment for real data
-  //d3.json(dataPath, function(data) {
+  d3.json(dataPath, function(data) {
      nv.addGraph(function() {
       var chart = nv.models.pieChart()
           .x(function(d) { return d.label })
@@ -77,17 +76,68 @@ function pv_drawPie(containerId, dataPath, opt) {
         d3.select(containerId).append("svg")
             .style('height',opt.height)
             .style('width',opt.width)
-            .datum(pieData) // switch these two lines to use real data 
-            //.datum(data) // switch these two lines to use real data 
+            //.datum(pieData) // switch these two lines to use real data 
+            .datum(data[0].data) // switch these two lines to use real data 
             .transition().duration(350)
             .call(chart);
 
       return chart;
     });
   //uncomment for real data
-  //});
+  });
 }
 
+
+function pv_drawPie(opt) {
+  // ---- available options ----
+  // opt.donut: boolean, true=donut, false=pie; default true
+  // opt.donutRatio: number 0-1, thickness of donut; default 0.4
+  // opt.containerId : string, id for containing div, do not include "#"
+  // opt.dataPath: string, path to json file with data
+  // opt.margins: object defining distance between chart and containing <svg>, ex: {top:30, bottom:75, left:0, right:0}
+  // opt.showLegend: boolean, show or hide NVD3 controls; default true
+  // opt.showLabels: boolean, show or hide pie labels; default true
+  // opt.donutLabelsOutside: boolean, labels in pie or outside; default false
+  // opt.labelType: string, options (key|value|percent); default percent
+  // opt.labelColors: array of strings, labels of data, corresponding to css classes 
+  // opt.applyClass: string, css class to apply to pie chart, required for labelColors to work
+  // for more options see pv.nv.d3.js file
+
+  // ---- css definitions ----
+  // #containerId: { height: ___; width:  ___; }
+  // #containerId .pie_labelColor1_ { fill: ______; }
+  // #containerId .pie_labelColor2_ { fill: ______; } etc
+
+  opt.color = [];
+  for(var i=0, j=opt.labelColors.length; i<j; i++) {
+    opt.color[i] = getStyleSheetPropertyValue('.' + opt.applyClass + ' .pie'+opt.labelColors[i], 'fill') ;
+    //console.log(opt.color[i]);
+  };
+
+   
+  d3.json(opt.dataPath, function(data) {
+    //var width  = document.getElementById(opt.containerId).offsetWidth;
+    //var height = document.getElementById(opt.containerId).offsetHeight;
+    
+    nv.addGraph(function() {
+      var chart = nv.models.pieChart()
+          .x(function(d) { return d.label })
+          .y(function(d) { return d.value })
+          .options(opt)
+          ;
+
+        d3.select('#'+opt.containerId).append("svg")
+            .attr("class", opt.applyClass)
+            //.style('height', height)
+            //.style('width', width)
+            .datum(data[0].data)
+            .transition().duration(350)
+            .call(chart);
+
+      return chart;
+    });
+  });
+}
 
 
 function pv_drawDatum(opt){
@@ -120,7 +170,7 @@ function pv_drawDatum(opt){
       svg.append("text")
         .attr("class", "datum_fact")
         .attr("x", width/2)
-          .attr("y", height)
+          .attr("y", height-10)
           .style("text-anchor", "end")
         .text(data.value);
   });
@@ -128,25 +178,39 @@ function pv_drawDatum(opt){
 
 
 
-function pv_drawline(opt){
+function pv_drawLine(opt){
   // ---- available options ----
   // opt.dataPath = string, path to json file with data
   // opt.containerId = string, id of div containing map
+  // opt.cumulate = boolean, accumulate values or no?
+  // opt.indexline = digit, number of data keys representing lines
+
+  // index line support via: http://stackoverflow.com/questions/23982142/nvd3-js-line-chart-add-vertical-lines
+  // to show line, last data key must define the line in json using: 
+  // "values": [
+  //  [x1, y1, y1],
+  //  [x2, y2, y2]
+  // ]  
+  // for more than one line, keep adding to end, change opt.indexline value to number of lines
+    
 
   d3.json(opt.dataPath, function(data) {
     nv.addGraph(function() {
-      //for loop calculates cumulative total
-      for (var i = 0, j = data.length; i < j; i +=1) {
-        data[i].values[0][2] = data[i].values[0][1];
-        for (var k=1, l = data[i].values.length; k<l ; k+=1) {
-          data[i].values[k][2] = data[i].values[k][1] + data[i].values[k-1][2];
+      
+      if(opt.cumulate==true){
+        //for loop calculates cumulative total
+        if(opt.indexline){ var datalength = data.length-opt.indexline }else { var datalength = data.length };
+        for (var i = 0, j = datalength; i < j; i +=1) {
+          data[i].values[0][2] = data[i].values[0][1];
+          for (var k=1, l = data[i].values.length; k<l ; k+=1) {
+            data[i].values[k][2] = data[i].values[k][1] + data[i].values[k-1][2];
+          };
         };
-      }; 
-      //for loop not necessary if json file already contains cumulative totals
-
+      }
+      
       var chart = nv.models.lineChart()
         .x(function(d) { return d[0] })
-        .y(function(d) { return d[2] })
+        .y(function(d) { if(opt.cumulate==true){ return d[2] } else{ return d[1] } })
         .color(d3.scale.category10().range())
         .useInteractiveGuideline(true)
         ;
@@ -158,7 +222,7 @@ function pv_drawline(opt){
 
       chart.yAxis.tickFormat(d3.format(','));
 
-      d3.select(opt.containerId).append('svg')
+      d3.select('#'+opt.containerId).append('svg')
         .datum(data)
         .transition().duration(500)
         .call(chart)
@@ -222,8 +286,7 @@ function pv_drawMap(opt){
       d3.select('#'+opt.ttId).transition().duration(200).style('opacity',0.9);      
       
       var coordinates = [0, 0];
-      //coordinates = d3.mouse(this);
-      coordinates = [d3.event.pageX, d3.event.pageY];
+      coordinates = d3.mouse(this);
       var x0 = coordinates[0];
       var y0 = coordinates[1];
 

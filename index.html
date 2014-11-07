@@ -15,13 +15,15 @@
 
   <div class="module">
     <h1>Bar Module</h1>
+    <label><input type="checkbox"> Sort values</label>
     <div id="barDiv" class="barchart"></div>
     <script>
       pv_drawBar({
         containerId: 'barDiv',
         dataPath: 'data/bar.json',
         margins: {top:30, bottom:80, left:30, right:30},
-        showControls: false,
+        showControls: 0,
+        showLegend: 0,
         rotateLabels: 45
       });
     </script>
