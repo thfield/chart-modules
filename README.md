@@ -106,7 +106,7 @@ for more options see pv.nv.d3.js file
 ]
 ```
 
-## Big Number
+## Datum Module
 ###JS
 **pv_drawDatum**(_opt_);  _opt_ is object with variables:
 ```
