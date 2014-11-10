@@ -15,7 +15,6 @@
 
   <div class="module">
     <h1>Bar Module</h1>
-    <label><input type="checkbox"> Sort values</label>
     <div id="barDiv" class="barchart"></div>
     <script>
       pv_drawBar({
@@ -29,6 +28,29 @@
     </script>
     <link rel="stylesheet" href="css/bar.css">
   </div>  
+
+
+  <div class="module">
+    <h1>Pie Module</h1>
+    <div id="pieDiv" class="piechart"></div>
+    <link rel="stylesheet" href="css/pie.css">
+    <script>
+      pv_drawPie({
+        containerId: 'pieDiv',
+        dataPath: 'data/pie.json',
+        donut: false,
+        donutRatio: 0.4,
+        //margins: {top:30, bottom:30, left:30, right:30},
+        showLegend: true,
+        showLabels: true,
+        donutLabelsOutside: false,
+        labelType: 'percent', //(key|value|percent)
+        applyClass: 'pieDemo',
+        labelColors: ['With','Against','Neutral','Abstained']
+      });
+    </script>
+    
+  </div>
 
   <div class="module">
     <h1>Datum Module</h1>

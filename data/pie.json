@@ -1,18 +1,18 @@
 [
-      { 
-        "label": "With",
-        "value" : 29
-      } , 
-      { 
-        "label": "Against",
-        "value" : 12
-      } , 
-      { 
-        "label": "Neutral",
-        "value" : 32
-      } , 
-      { 
-        "label": "Abstained",
-        "value" : 19
-      } 
-    ]
+  { 
+    "label": "With",
+    "value" : 29
+  } , 
+  { 
+    "label": "Against",
+    "value" : 12
+  } , 
+  { 
+    "label": "Neutral",
+    "value" : 32
+  } , 
+  { 
+    "label": "Abstained",
+    "value" : 19
+  }
+]
