@@ -110,18 +110,15 @@ function pv_drawPie(opt) {
 
   opt.color = [];
   for(var i=0, j=opt.labelColors.length; i<j; i++) {
-    opt.color[i] = getStyleSheetPropertyValue('.' + opt.applyClass + ' .pie'+opt.labelColors[i], 'fill');
-    //opt.color[i] = getStyleSheetPropertyValue('#' + opt.containerId + ' .pie'+opt.labelColors[i], 'fill');
-    console.log(opt.color[i]);
+    opt.color[i] = getStyleSheetPropertyValue('.' + opt.applyClass + ' .pie'+opt.labelColors[i], 'fill');   
   };
-
    
   d3.json(opt.dataPath, function(data) {
     //var width  = document.getElementById(opt.containerId).offsetWidth;
     //var height = document.getElementById(opt.containerId).offsetHeight;
-    var width = getStyleSheetPropertyValue('#' + opt.containerId, 'width');
-    var height = getStyleSheetPropertyValue('#' + opt.containerId, 'height');
-    
+    var width  = getStyleSheetPropertyValue('#'+ opt.containerId, 'width'),
+        height = getStyleSheetPropertyValue('#'+ opt.containerId, 'height');
+
     nv.addGraph(function() {
       var chart = nv.models.pieChart()
           .x(function(d) { return d.label })
@@ -133,7 +130,6 @@ function pv_drawPie(opt) {
             .attr("class", opt.applyClass)
             .style('height', height)
             .style('width', width)
-            //.datum(data[0].data)
             .datum(data)
             .transition().duration(350)
             .call(chart);

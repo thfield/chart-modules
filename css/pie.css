@@ -1,6 +1,8 @@
-#pieDemo: { 
-	height: 400; 
-	width:  400; 
+#pieDiv { 
+	height: 400px; 
+	width:  400px; 
+	fill: white;
+
 }
 
 .pieDemo .pieWith { 
