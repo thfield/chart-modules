@@ -99,7 +99,7 @@ function pv_drawPie(opt) {
   // opt.showLabels: boolean, show or hide pie labels; default true
   // opt.donutLabelsOutside: boolean, labels in pie or outside; default false
   // opt.labelType: string, options (key|value|percent); default percent
-  // opt.labelColors: array of strings, labels of data, corresponding to css classes 
+  // opt.labelColors: array of strings, labels of data, corresponding to css classes
   // opt.applyClass: string, css class to apply to pie chart, required for labelColors to work
   // for more options see pv.nv.d3.js file
 
@@ -116,8 +116,8 @@ function pv_drawPie(opt) {
   d3.json(opt.dataPath, function(data) {
     //var width  = document.getElementById(opt.containerId).offsetWidth;
     //var height = document.getElementById(opt.containerId).offsetHeight;
-    var width  = getStyleSheetPropertyValue('#'+ opt.containerId, 'width'),
-        height = getStyleSheetPropertyValue('#'+ opt.containerId, 'height');
+    var width  = getStyleSheetPropertyValue('#'+ opt.containerId, 'width') || 400,
+        height = getStyleSheetPropertyValue('#'+ opt.containerId, 'height') || 400;
 
     nv.addGraph(function() {
       var chart = nv.models.pieChart()
