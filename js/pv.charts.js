@@ -117,7 +117,7 @@ function pv_drawPie(opt) {
     //var width  = document.getElementById(opt.containerId).offsetWidth;
     //var height = document.getElementById(opt.containerId).offsetHeight;
     var width  = getStyleSheetPropertyValue('#'+ opt.containerId, 'width') || 400,
-        height = getStyleSheetPropertyValue('#'+ opt.containerId, 'height') || 4060606;
+        height = getStyleSheetPropertyValue('#'+ opt.containerId, 'height') || 400;
 
     nv.addGraph(function() {
       var chart = nv.models.pieChart()
