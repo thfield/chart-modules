@@ -117,7 +117,7 @@ function pv_drawPie(opt) {
     //var width  = document.getElementById(opt.containerId).offsetWidth;
     //var height = document.getElementById(opt.containerId).offsetHeight;
     var width  = getStyleSheetPropertyValue('#'+ opt.containerId, 'width') || 400,
-        height = getStyleSheetPropertyValue('#'+ opt.containerId, 'height') || 400;
+        height = getStyleSheetPropertyValue('#'+ opt.containerId, 'height') || 4060606;
 
     nv.addGraph(function() {
       var chart = nv.models.pieChart()
@@ -285,10 +285,8 @@ function pv_drawMap(opt){
     function mouseOver(d){
       d3.select('#'+opt.ttId).transition().duration(200).style('opacity',0.9);      
       
-      var coordinates = [0, 0];
-      coordinates = d3.mouse(this);
-      var x0 = coordinates[0];
-      var y0 = coordinates[1];
+      var x0 = d3.event.pageX,
+          y0 = d3.event.pageY;
 
       d3.select('#'+opt.ttId).html(tooltipHtml(d.n, allData.data[d.id]))  
         .style("left", x0 + "px")
